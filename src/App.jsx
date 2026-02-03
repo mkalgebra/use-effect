@@ -46,7 +46,11 @@ function App() {
         />
       ))}
 
-      <ul></ul>
+      <ul>
+        {nums.map((num) => (
+          <li key={num.unique}>{num.value}</li>
+        ))}
+      </ul>
     </>
   );
 }
